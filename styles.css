@@ -1,0 +1,263 @@
+*{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Epilogue', sans-serif;
+}
+body{
+  max-height: 100vh;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 98%);
+  
+}
+header{
+  padding: 1rem;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown,.career,.about,.flex-right{
+  display: none;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.logo{
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: black;
+  margin-right: 5rem;
+}
+a:hover{
+  text-decoration: underline;
+}
+nav>img{
+  align-self: center;
+  cursor: pointer;
+}
+main{
+  display: grid;
+  gap: 10px;
+  max-width: 375px;
+}
+.img-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:last-child{
+  padding: 2.5rem 1.5rem;
+  
+}
+section>h1{
+  text-align: center;
+  font-size: 2rem;
+}
+section>p{
+  padding: 1rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  margin-bottom: 1rem;
+  
+}
+button{
+  cursor: pointer;
+}
+section>button{
+  display: flex;
+  padding: 1rem 1.75rem;
+  margin: auto;
+  color: hsl(0, 0%, 98%);
+  background-color: black;
+  border: 0;
+  font-weight: 400;
+  font-size: .9rem;
+  border-radius: 10px;
+  font-family: 'Epilogue', sans-serif;
+  text-shadow: 1px 0px white;
+}
+.clients{
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger{
+  transition:  1.2s;
+  padding: 1.5rem .75rem;
+  position: absolute;
+  top: 0;
+  background-color: hsl(0, 0%, 98%);
+  right: 0;
+  height: 100vh;
+  width: 60%;
+  
+}
+.inner-div{
+  margin-bottom: 10px;
+  /* border: 2px solid green; */
+  margin-top: 0;
+  padding: 2.3rem;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  gap:15px;
+  display: flex;
+  flex-direction: column;
+}
+.close-icon{
+  float: right;
+  cursor: pointer;
+}
+.features{
+  clear: right;
+  margin-top: 3.5rem;
+}
+#up,#up1,#down,#down1{
+  margin-left: 5px;
+}
+.company>span,.features>span{
+  margin-left: 15px;
+}
+.hamburger>a{
+  display: block;
+  margin-bottom: 20px;
+}
+.login,.sign-up{
+ display: block;
+ padding: 1rem 2rem;
+ width: 80%;
+ margin: auto;
+ font-weight: 500;
+ color:hsl(0, 0%, 41%);
+ background-color: inherit;
+}
+.sign-up{
+  border:1.5px solid hsl(0, 0%, 41%);
+}
+.hide{
+  display: none;
+}
+
+
+/*////////////////////////////// MEDIA QUERY///////////////////////////// */
+@media screen and (min-width:390px) and (max-width:550px){
+ 
+  main{
+    max-width: 100%;
+  }
+  
+  .img-section>img{
+    min-width: 100%;
+  }
+}
+@media screen and (min-width:550px) and (max-width:756px){
+  main{
+    max-width: 100%;
+  }
+  .img-section>img{
+  width: 85%;
+   height: 85%;
+  }
+  
+}
+@media screen and (min-width:756px) {
+  .open-icon{
+    display: none;
+  }
+  .nav-mid-item{
+    color:hsl(0, 0%, 41%);
+    font-size: 15px;
+    font-weight: 600;
+    align-self: center;
+    
+  }
+  nav{
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-left{
+    display: flex;
+    gap:25px;
+  }
+  
+  .logo{
+    align-self: flex-start;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+  .dropdown{
+    
+    align-self: center;
+    
+  }
+  .dropdown-content{
+    position: absolute;
+    top:50px;
+    background-color:white ;
+    width: 110px;
+    padding:1rem;
+
+  }
+  #feature-items{
+    left:11.5rem
+  }
+  #about{
+    left:19rem;
+    width:80px
+  }
+  main{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .dropdown,.career,.about,.flex-right{
+    display: block;
+  }
+  section:last-child{
+    padding-top: 10rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+  .learn-more-btn{
+    margin-left: 0.5rem;
+  }
+  .learn-more-btn:hover{
+    background-color: inherit;
+    border:1px solid black;
+    color: black;
+  }
+  .clients{
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h1{
+    margin-left: 1.25rem;
+  }
+  .flex-right>button{
+    padding: .75rem 1.2rem;
+    margin: auto;
+    font-weight: 500;
+    color:hsl(0, 0%, 41%);
+    background-color: inherit;
+    font-size: .9rem;
+    border-radius: 10px;
+  }
+  .flex-right>button:first-child{
+    border: 0;
+  }
+ 
+}

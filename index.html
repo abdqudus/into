@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2cb9705ef.js"
+      crossorigin="anonymous"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="#" class="logo">snap</a>
+          <div class="dropdown ">
+            <a id='features'class=" nav-mid-item">Features <img class="hide" id="up"src="images/icon-arrow-up.svg" alt="" srcset=""><img id='down' src="images/icon-arrow-down.svg" alt="" srcset=""></a>
+            <div id="feature-items" class="inner-div dropdown-content hide ">
+              <a><span><img src="images/icon-todo.svg"></span> Todo List</a>
+              <a><span><img src="images/icon-calendar.svg"></span> Calendar</a>
+              <a><span><img src="images/icon-reminders.svg"></span> Reminders</a>
+              <a><span><img src="images/icon-planning.svg"></span> Planning</a>
+            </div>
+          </div>
+            <div class="dropdown ">
+              <a class="company nav-mid-item">Company <img class="hide" id="up1" src="images/icon-arrow-up.svg" alt="" srcset=""><img id="down1"  src="images/icon-arrow-down.svg" alt="" srcset=""></a>
+              <div id='about'class="inner-div dropdown-content hide">
+                <a> History</a>
+                <a>Our Team</a>
+                <a>Blog</a>
+              </div>
+            </div>
+           
+            <a href="#" class="nav-mid-item career" >Careers</a>
+            <a href="#" class="nav-mid-item about">About</a>
+        </div>
+      
+        <div class="flex-right">
+          <button >Log in</button>
+          <button>Register</button>
+        </div>
+        
+        <img class='open-icon'src="images/icon-menu.svg" alt="menu open icon" srcset="">
+      </nav>
+    </header>
+    <main>
+      <section class="img-section">
+        <img src="images/image-hero-mobile.png" alt="an image of a peron holding a laptop" srcset="">
+      </section>
+      <section >
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar. </p>
+        <button class="learn-more-btn">Learn more</button>
+        <div class="clients">
+          <img src="images/client-databiz.svg" alt="clients logo" srcset="">
+          <img src="images/client-audiophile.svg" alt="clients logo" srcset="">
+          <img src="images/client-meet.svg" alt="clients logo" srcset="">
+          <img src="images/client-maker.svg" alt="clients logo" srcset="">
+        </div>
+      </section>
+    </main>
+    <section class="hamburger hide">
+            <img class="close-icon" src="images/icon-close-menu.svg" alt="" srcset="">
+            <a id='features-1'class="features">Features <img class="hide" id="up2"src="images/icon-arrow-up.svg" alt="" srcset=""><img id='down2' src="images/icon-arrow-down.svg" alt="" srcset=""></a>
+            <div id="feature-items-1" class="inner-div hide">
+                <a><span><img src="images/icon-todo.svg"></span> Todo List</a>
+                <a><span><img src="images/icon-calendar.svg"></span> Calendar</a>
+                <a><span><img src="images/icon-reminders.svg"></span> Reminders</a>
+                <a><span><img src="images/icon-planning.svg"></span> Planning</a>
+            </div>
+          <a class="company-1">Company <img class="hide" id="up3" src="images/icon-arrow-up.svg" alt="" srcset=""><img id="down3"  src="images/icon-arrow-down.svg" alt="" srcset=""></a>
+          <div id='about-1'class="inner-div hide">
+            <a> History</a>
+            <a>Our Team</a>
+            <a>Blog</a>
+          </div>
+          <a>Career</a>
+          <a>About</a>
+          <button class="login">Log in</button>
+          <button class="sign-up">Register</button>
+    </section>
+  
+  
+    
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
